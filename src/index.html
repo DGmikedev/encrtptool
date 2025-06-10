@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/css_cyborg.css" />
+    <script type="module" src="/main.js" defer></script>
+  </head>
+
+  <body>
+    <main class="container">
+
+  <!--
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Encriptador
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Desencriptador</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  -->
+    <div class="content">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" data-bs-toggle="tab" href="#encriptador" aria-selected="true" role="tab">ENCRIPTADOR</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" data-bs-toggle="tab" href="#desencriptador" aria-selected="false" role="tab" tabindex="-1">DESENCRIPTADOR</a>
+        </li>
+        <!-- <li class="nav-item" role="presentation">
+          <a class="nav-link disabled" href="#" aria-selected="false" tabindex="-1" role="tab">Disabled</a>
+        </li> -->
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" style="">
+            <h6 class="dropdown-header">Dropdown header</h6>
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li> -->
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active show " id="encriptador" role="tabpanel">
+          <div class="content">
+            <div>
+              <label for="formFile" class="form-label mt-4">Archivo a encriptar</label>
+              <input class="form-control" type="file" id="formFile"> 
+              <br>
+              <button type="button" id="btnencriptador" class="btn btn-lg btn-outline-success">ENCRIPTAR</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="desencriptador" role="tabpanel">
+            <div>
+              <label for="keyFile" class="form-label mt-4">Archivo llave</label>
+              <input class="form-control" type="file" id="keyFile"> 
+              <br>
+              <label for="desencriptFile" class="form-label mt-4">Archivo a desencriptar</label>
+              <input class="form-control" type="file" id="desencriptFile"> 
+              <br>
+              <button type="button" id="btnencriptador" class="btn btn-lg btn-outline-success">DESENCRIPTAR</button>
+            </div>
+        </div>
+
+        <!--<div class="tab-pane fade" id="dropdown1">
+          <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+        </div>
+        <div class="tab-pane fade" id="dropdown2">
+          <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+        </div> -->
+      </div>
+    </div>
+
+    <!--
+      <form class="row" id="greet-form">
+        <input id="greet-input" placeholder="Enter a name..." />
+        <button type="submit">Greet</button>
+      </form>
+      <p id="greet-msg"></p>  -->
+    </main>
+
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
