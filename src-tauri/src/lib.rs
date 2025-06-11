@@ -13,6 +13,7 @@ fn rx_data(path2encript: String)->String{
 
 }
 
+
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
